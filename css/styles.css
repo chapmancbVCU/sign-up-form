@@ -10,6 +10,10 @@
   src: url("../fonts/Norse-Bold.otf") format("opentype");
 }
 
+body { 
+  display: flex;
+}
+
 h1 {
   font-family: "norse-bold", sans-serif;
 }
