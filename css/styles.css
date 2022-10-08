@@ -4,3 +4,12 @@
   Date Created: October 5, 2022
    Description: CSS Stylesheet for Sign-up Form project.
 ******************************************************************************/
+
+@font-face {
+  font-family: "norse-bold";
+  src: url("fonts/Norse-Bold.otf") format("opentype");
+}
+
+h1 {
+  font-family: "norse-bold", sans-serif;
+}
