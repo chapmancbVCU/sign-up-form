@@ -19,6 +19,11 @@ body {
   background-image: url("../images/car.png");
   background-size: cover;
   flex-basis: 35%;
+
+}
+
+img {
+  height: 100px;
 }
 
 h1 {
@@ -27,6 +32,13 @@ h1 {
 
 .right-section{
   background-color: lightgray;
+  padding-left: 40px;
+  padding-right: 40px;
+  flex-basis: 65%;
+}
+
+.right-section-header {
+  font-family: "norse-bold", sans-serif;
 }
 
 .right-section-main {
