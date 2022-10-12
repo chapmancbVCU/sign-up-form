@@ -26,11 +26,11 @@ h1 {
 }
 
 .right-section{
-
+  background-color: lightgray;
 }
 
-.right-section-header {
-  background-color: lightgray;
+.right-section-main {
+  background-color: #ffffff;
 }
 
 .right-section-footer {
