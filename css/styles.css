@@ -61,6 +61,42 @@ h1 {
 /* Styling for area that contains main form and bottons. */
 .right-section-main {
   background-color: #ffffff;
+  padding-top: 30px;
+}
+
+/* Styling for sign-up form. */
+.sign-up-form {
+  width: 80%;
+  margin: 0 0 40px 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
+.form-field input[type='text'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-field label {
+  margin-bottom: 15px;
 }
 
 /* Styling for button and other information. */
@@ -70,19 +106,28 @@ h1 {
   padding-right: 40px;
 }
 
-.sign-up-form {
-  width: 80%;
-  margin: 0 0 40px 0;
-  padding-left: 40px;
-  padding-right: 40px;
-}
+
 
 @media only screen and (min-width: 700px) {
   body {
     flex-direction: row;
   }
-
   .left-section-content {
     margin-top: 200px;
+  }
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+    margin-bottom: 20px;
+  }
+  .form-field input[type='text'] {
+    width: 200px;
+    height: initial;
+  }
+  .form-field label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
   }
 }
