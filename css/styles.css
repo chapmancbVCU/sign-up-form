@@ -29,6 +29,14 @@ h1 {
 
 }
 
+.right-section-header {
+  background-color: lightgray;
+}
+
+.right-section-footer {
+  background-color: lightgray;
+}
+
 @media only screen and (min-width: 700px) {
   body {
     flex-direction: row;
