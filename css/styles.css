@@ -15,6 +15,7 @@ body {
   flex-direction: column;
 }
 
+/* Left side of page. */
 .left-section{
   background-image: url("../images/car.png");
   background-size: cover;
@@ -22,6 +23,7 @@ body {
 
 }
 
+/* Styling for div that contains logo and text. */
 .left-section-content {
   display: flex;
   justify-content: center;
@@ -29,16 +31,19 @@ body {
   
 }
 
+/* Styling for logo image. */
 img {
   height: 100px;
   margin: 0;
 }
 
+/* Text on left side of page. */
 h1 {
   font-family: "norse-bold", sans-serif;
   color: red
 }
 
+/* Right section that contains form, button, and description. */
 .right-section{
   background-color: lightgray;
   padding-left: 40px;
@@ -46,14 +51,17 @@ h1 {
   flex-basis: 65%;
 }
 
+/* Top most section of right side with description. */
 .right-section-header {
   font-family: "norse-bold", sans-serif;
 }
 
+/* Styling for area that contains main form and bottons. */
 .right-section-main {
   background-color: #ffffff;
 }
 
+/* Styling for button and other information. */
 .right-section-footer {
   background-color: lightgray;
 }
