@@ -12,8 +12,25 @@
 
 body { 
   display: flex;
+  flex-direction: column;
+}
+
+.left-section{
+  background-image: url("../images/car.png");
+  background-size: cover;
+  flex-basis: 35%;
 }
 
 h1 {
   font-family: "norse-bold", sans-serif;
+}
+
+.right-section{
+
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    flex-direction: row;
+  }
 }
