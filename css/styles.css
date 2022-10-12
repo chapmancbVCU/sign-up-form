@@ -22,12 +22,21 @@ body {
 
 }
 
+.left-section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 img {
   height: 100px;
+  margin: 0;
 }
 
 h1 {
   font-family: "norse-bold", sans-serif;
+  color: red
 }
 
 .right-section{
@@ -52,5 +61,9 @@ h1 {
 @media only screen and (min-width: 700px) {
   body {
     flex-direction: row;
+  }
+
+  .left-section-content {
+    margin-top: 200px;
   }
 }
