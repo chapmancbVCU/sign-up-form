@@ -89,7 +89,9 @@ h1 {
   column-gap: 10px;
 }
 
-.form-field input[type='text'] {
+.form-field input[type='text'],
+.form-field input[type='email'],
+.form-field input[type='tel']  {
   background-color: #FFFFFF;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
@@ -123,13 +125,15 @@ h1 {
   .form-row {
     flex-direction: row;
     align-items: flex-start; /* To avoid stretching */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     column-gap: 20px;
   }
   .form-field {
     align-items: flex-start;
   }
-  .form-field input[type='text'] {
+  .form-field input[type='text'],
+  .form-field input[type='email'],
+  .form-field input[type='tel'] {
     width: 200px;
     height: initial;
   }
