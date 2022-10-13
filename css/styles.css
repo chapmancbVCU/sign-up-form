@@ -101,6 +101,13 @@ h1 {
   font-size: 10px;
 }
 
+.form-field input[type='text']:invalid,
+.form-field input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;   /* Remove default red glow in Firefox. */
+}
+
 .form-field label {
   margin-bottom: 15px;
   text-align: left;
