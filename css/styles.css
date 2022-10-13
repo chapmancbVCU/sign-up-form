@@ -70,9 +70,7 @@ h1 {
 /* Styling for sign-up form. */
 .sign-up-form {
   width: 100%;
-  margin: 0 0 0 0;
-  padding-left: 0;
-  padding-right: 0;
+
 }
 
 .form-row {
@@ -110,10 +108,30 @@ h1 {
 /* Styling for button and other information. */
 .right-section-footer {
   background-color: lightgray;
-  padding-left: 40px;
+  padding: 40px;
 }
 
+.right-section-footer button {
+  font-size: 16px;
+  font-weight: bold;
 
+  color: #FFFFFF;
+  background-color: #5995DA;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.right-section-footer button:hover {
+  background-color: #76AEED;
+}
+
+.right-section-footer button:active {
+  background-color: #407FC7;
+}
 
 @media only screen and (min-width: 700px) {
   body {
