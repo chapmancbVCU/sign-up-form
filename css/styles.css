@@ -140,7 +140,7 @@ h1 {
     flex-direction: row;
   }
   .left-section-content {
-
+    margin-top: 200px;
   }
   .form-row {
     flex-direction: row;
