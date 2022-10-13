@@ -28,7 +28,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  background-color: black;
+  opacity: 50%;
 }
 
 /* Styling for logo image. */
@@ -40,7 +41,7 @@ img {
 /* Text on left side of page. */
 h1 {
   font-family: "norse-bold", sans-serif;
-  color: red
+  color: #FF0099;
 }
 
 /* Right section that contains form, button, and description. */
