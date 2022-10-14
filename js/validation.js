@@ -6,6 +6,13 @@
 ******************************************************************************/
 
 /******************************************************************************
+ * GLOBAL VARIABLES
+ *****************************************************************************/
+let password = document.getElementById("password");
+let confirmPassword = document.getElementById("confirm-password");
+
+
+/******************************************************************************
  *        Name: formatPhoneNumber
  * Description: Function that receives number as an input and formats it based
  *              on the length.  For strings less than three it does nothing.
@@ -70,16 +77,21 @@ function phoneNumberFormatter() {
 }
 
 
-
-
-
-
-
-
-
 /******************************************************************************
- *        Name: 
- * Description: 
- *   Arguments: 
- *     Returns: 
+ *        Name: validatePassword
+ * Description: This function enforces requirement that new passwords must
+ *              match.  If passwords do not match then a message is displayed
+ *              to the user.
+ *   Arguments: NONE
+ *     Returns: NONE
  *****************************************************************************/
+function validatePassword() {
+    if(password.value != confirmPassword.value) {
+        confirmPassword.setCustomValidity("Passwords Don't Match")
+    } else {
+        confirmPassword.setCustomValidity("");
+    }
+}
+
+password.onchange = validatePassword;
+confirmPassword.onkeyup = validatePassword;
