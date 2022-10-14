@@ -107,13 +107,22 @@ h1 {
   font-size: 10px;
 }
 
+/* Visuals for invalid inputs. */
 .form-field input[type='text']:invalid,
 .form-field input[type='email']:invalid,
 .form-field input[type='tel']:invalid,
-.form-field input[type='password']  {
+.form-field input[type='password']:invalid  {
   border: 1px solid #D55C5F;
   color: #D55C5F;
   box-shadow: none;   /* Remove default red glow in Firefox. */
+}
+
+/* Visuals for valid inputs. */
+.form-field input[type='text']:valid,
+.form-field input[type='email']:valid,
+.form-field input[type='tel']:valid,
+.form-field input[type='password']:valid  {
+  border-color: green;
 }
 
 .form-field label {
