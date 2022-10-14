@@ -4,6 +4,9 @@
   Date Created: October 5, 2022
    Description: CSS Stylesheet for Sign-up Form project.
 ******************************************************************************/
+:root {
+  --my-background-color: lightgray;
+}
 
 @font-face {
   font-family: "norse-bold";
@@ -13,6 +16,7 @@
 body { 
   display: flex;
   flex-direction: column;
+  background-color: var(--my-background-color);
   margin: 0;
 }
 
@@ -47,7 +51,6 @@ h1 {
 
 /* Right section that contains form, button, and description. */
 .right-section{
-  background-color: lightgray;
   flex-basis: 65%;
 }
 
@@ -125,7 +128,7 @@ h1 {
 
 /* Styling for button and other information. */
 .right-section-footer {
-  background-color: lightgray;
+  background-color:  var(--my-background-color);
   padding: 40px;
 }
 
