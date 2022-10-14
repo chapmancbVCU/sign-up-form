@@ -94,7 +94,7 @@ h1 {
 .form-field input[type='text'],
 .form-field input[type='email'],
 .form-field input[type='tel'],
-.form-field input[type='password']  {
+.form-field input[type='password'] {
   background-color: #FFFFFF;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
@@ -105,7 +105,8 @@ h1 {
 
 .form-field input[type='text']:invalid,
 .form-field input[type='email']:invalid,
-.form-field input[type='tel']:invalid {
+.form-field input[type='tel']:invalid,
+.form-field input[type='password']  {
   border: 1px solid #D55C5F;
   color: #D55C5F;
   box-shadow: none;   /* Remove default red glow in Firefox. */
