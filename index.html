@@ -6,91 +6,93 @@
 ------------------------------------------------------------------------------>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WRX/STI Cruise Sign-up Form</title>
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <div class="left-section">
-    <div class="left-section-content">
-      <img src="./images/odin-lined.png" alt="Odin logo">
-      <h1>WRX/STI Cruises</h1> 
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRX/STI Cruise Sign-up Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <div class="left-section">
+      <div class="left-section-content">
+        <img src="./images/odin-lined.png" alt="Odin logo">
+        <h1>WRX/STI Cruises</h1> 
+      </div>
     </div>
-  </div>
-  <div class="right-section">
-    <div class="right-section-header">
-      <p>This is not a real online service!  This is a sample page that
-          demonstrates my interests in riding on back roads in my car.
-          If interested you can fill out this dummy form to verify I 
-          implemented it correctly for this project.
-      </p>
-      <p>You know you want to.</p>
+    <div class="right-section">
+      <div class="right-section-header">
+        <p>This is not a real online service!  This is a sample page that
+            demonstrates my interests in riding on back roads in my car.
+            If interested you can fill out this dummy form to verify I 
+            implemented it correctly for this project.
+        </p>
+        <p>You know you want to.</p>
+      </div>
+      <div class="right-section-main">
+        <p class="msg">Let's do this!</p>
+        <form action="#" method="GET" class="sign-up-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-field">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" required>
+            </div>  
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" 
+                id="email"
+                name="email" 
+                placeholder="joe@example.com"
+                required>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone number</label>
+              <input type="tel" 
+                onkeydown="phoneNumberFormatter()"
+                id="phone" 
+                name="phone" 
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                minlength="12"
+                maxlength="12"
+                placeholder="ex: 123-456-7890"
+                required>
+            </div>
+          </div>
+          <p class="password-msg"><strong>Password must contain at least 1 number, 1 upper and 1 lower case letter, 
+              and at least 8 characters.  Use a dummy password that you will never use.</strong></p>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required>
+            </div>
+            <div class="form-field">
+              <label for="cpassword">Confirm password</label>
+              <input type="password" 
+                name="cpassword" 
+                id="cpassword" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                required>
+            </div>
+          </div>
+          <div class="right-section-footer">
+            <button>Submit</button>
+            <div>
+              <p>Already have an account? <a href="#">Log in</a></p>
+              <p class="footer-text">Photo by: Chad Chapman</p>
+              <p class="footer-text">Location: Whitetop Mountain, VA</p>
+              <p class="footer-text"><a href="https://www.linkedin.com/in/chadchapman2010/">LinkedIn</a></p>
+              <p class="footer-text"><a href="https://github.com/chapmancbVCU">GitHub</a></p>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="right-section-main">
-      <p class="msg">Let's do this!</p>
-      <form action="#" method="GET" class="sign-up-form">
-        <div class="form-row">
-          <div class="form-field">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" required>
-          </div>
-          <div class="form-field">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" required>
-          </div>  
-        </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" 
-              id="email"
-              name="email" 
-              placeholder="joe@example.com"
-              required>
-          </div>
-          <div class="form-field">
-            <label for="phone">Phone number</label>
-            <input type="tel" 
-              id="phone" 
-              name="phone" 
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              minlength="12"
-              maxlength="12"
-              placeholder="ex: 123-456-7890"
-              required>
-          </div>
-        </div>
-        <p class="password-msg"><strong>Password must contain at least 1 number, 1 upper and 1 lower case letter, 
-            and at least 8 characters.  Use a dummy password that you will never use.</strong></p>
-        <div class="form-row">
-          <div class="form-field">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required>
-          </div>
-          <div class="form-field">
-            <label for="cpassword">Confirm password</label>
-            <input type="password" 
-              name="cpassword" 
-              id="cpassword" 
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              required>
-          </div>
-        </div>
-        <div class="right-section-footer">
-          <button>Submit</button>
-          <div>
-            <p>Already have an account? <a href="#">Log in</a></p>
-            <p class="footer-text">Photo by: Chad Chapman</p>
-            <p class="footer-text">Location: Whitetop Mountain, VA</p>
-            <p class="footer-text"><a href="https://www.linkedin.com/in/chadchapman2010/">LinkedIn</a></p>
-            <p class="footer-text"><a href="https://github.com/chapmancbVCU">GitHub</a></p>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</body>
+    <script src="./js/validation.js"></script>
+  </body>
 </html>
